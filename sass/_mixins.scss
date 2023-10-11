@@ -1,0 +1,30 @@
+@mixin button($background-color, $color, $border-color) {
+	background-color: $background-color;
+	color: $color;
+	border: 1px solid $border-color;
+	border-radius: 5px;
+	padding: 3px 30px;
+	transition: all 0.5s ease;
+	text-decoration: none;
+	&:hover {
+		background-color: $color;
+		color: $background-color;
+	}
+}
+
+@mixin section-title($color, $background-color) {
+	color: $color;
+	line-height: 50px;
+	position: relative;
+	margin-right: 30px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 15px;
+		height: 100%;
+		top: 0;
+		right: -30px;
+		background-color: $background-color;
+	}
+}

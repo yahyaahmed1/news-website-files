@@ -1,0 +1,39 @@
+form .button {
+  background-color: #fff;
+  color: #b80000;
+  border: 1px solid #b80000;
+  border-radius: 5px;
+  padding: 3px 30px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-size: 22px;
+}
+form .button:hover {
+  background-color: #b80000;
+  color: #fff;
+}
+form .form-check-label {
+  cursor: pointer;
+  user-select: none;
+}
+
+a.ms-2 {
+  color: #b80000;
+}
+
+.social-media-login .login-btn {
+  color: #b80000;
+  font-size: 25px;
+  transition: all 0.5s ease;
+}
+.social-media-login .login-btn:hover {
+  color: rgba(184, 0, 0, 0.5);
+}
+
+@media (max-width: 991px) {
+  body main .vh-100 {
+    height: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=sign.css.map */

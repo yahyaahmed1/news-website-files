@@ -1,0 +1,105 @@
+// sass --watch ./sass/search.scss ./css/search.css
+@import "./variables";
+@import "./mixins";
+
+.button {
+	@include button($main-color, $white-color, $main-color);
+	font-size: 18px;
+}
+.search-header {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	form.search {
+		display: flex;
+		justify-content: space-between;
+		#search-field {
+			outline: none;
+			border: 2px solid $gray-color;
+			border-radius: 5px;
+			width: 100%;
+			margin-left: 35px;
+			padding: 5px 15px;
+			&:focus,
+			&:active {
+				border: 2px solid $main-color;
+			}
+		}
+	}
+}
+.result {
+	&-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.sort {
+			span {
+				font-size: 18px;
+			}
+		}
+		#sort-dropdown {
+			margin-right: 5px;
+			padding: 5px 15px;
+			border: 2px solid $gray-color;
+			border-radius: 5px;
+		}
+	}
+	&-card {
+		padding: 15px;
+		border-bottom: 1px dotted $gray-color;
+		&:hover {
+			h4 {
+				text-decoration: underline;
+			}
+		}
+		a {
+			color: $black-color;
+			text-decoration: none;
+		}
+		img {
+			border-radius: 5px;
+			width: 100%;
+		}
+		h4 {
+			font-size: 22px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		p {
+			font-size: 16px;
+			margin-bottom: 5px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+		}
+		time {
+			font-size: 16px;
+			color: $gray-color;
+		}
+	}
+}
+@media (max-width: 1199px) {
+	.result-card {
+		h4 {
+			font-size: 18px;
+		}
+		p {
+			-webkit-line-clamp: 2;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.result-card {
+		text-align: center;
+		h4 {
+			font-size: 22px;
+			margin-top: 15px;
+			margin-bottom: 5px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+}
