@@ -128,7 +128,8 @@
 }
 
 .related .article-link img {
-  height: 125px;
+  height: auto;
+  border-radius: 5px;
 }
 .related .button {
   background-color: #b80000;
@@ -243,6 +244,15 @@
   .article-main .article-body .keywords-section .keywords .keyword {
     padding: 10px 20px;
     font-size: 16px;
+  }
+  .related .article-link img {
+    height: 175px;
+  }
+  .related .article-link .article-category {
+    font-size: 16px;
+  }
+  .related .article-link .article-title {
+    font-size: 18px;
   }
   .related .col-sm-4 {
     width: 350px;

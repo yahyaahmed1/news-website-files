@@ -293,7 +293,12 @@ section {
 				}
 				p {
 					font-size: 18px;
-					margin: 35px auto 20px;
+					margin: 15px auto 20px;
+					overflow: hidden;
+					display: -webkit-box;
+					-webkit-line-clamp: 4; /* number of lines to show */
+					line-clamp: 2;
+					-webkit-box-orient: vertical;
 				}
 				time {
 					color: $gray-color;
@@ -434,6 +439,13 @@ section {
 			.article-title {
 				font-weight: bold;
 				margin-bottom: 15px;
+			}
+			p {
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 2; /* number of lines to show */
+				line-clamp: 2;
+				-webkit-box-orient: vertical;
 			}
 		}
 		.button {
@@ -698,11 +710,6 @@ footer {
 				}
 				p {
 					font-size: 12px;
-					overflow: hidden;
-					display: -webkit-box;
-					-webkit-line-clamp: 2; /* number of lines to show */
-					line-clamp: 2;
-					-webkit-box-orient: vertical;
 				}
 			}
 		}

@@ -139,7 +139,8 @@
 .related {
 	.article-link {
 		img {
-			height: 125px;
+			height: auto;
+			border-radius: 5px;
 		}
 	}
 	.button {
@@ -276,6 +277,17 @@
 		}
 	}
 	.related {
+		.article-link {
+			img {
+				height: 175px;
+			}
+			.article-category {
+				font-size: 16px;
+			}
+			.article-title {
+				font-size: 18px;
+			}
+		}
 		.col-sm-4 {
 			width: 350px;
 			margin: auto auto 30px;

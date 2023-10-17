@@ -313,7 +313,12 @@ section.most-read .card-text h4 {
 }
 section.most-read .card-text p {
   font-size: 18px;
-  margin: 35px auto 20px;
+  margin: 15px auto 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 section.most-read .card-text time {
   color: #b1aeae;
@@ -458,6 +463,13 @@ section.latest-news .section-title {
 section.latest-news .card-text .article-title {
   font-weight: bold;
   margin-bottom: 15px;
+}
+section.latest-news .card-text p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 section.latest-news .button {
   background-color: #b80000;
@@ -664,11 +676,6 @@ footer .footer-brand:hover {
   }
   section.latest-news .card-text p {
     font-size: 12px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
-    line-clamp: 2;
-    -webkit-box-orient: vertical;
   }
   footer .line {
     display: block !important;
