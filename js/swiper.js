@@ -7,7 +7,6 @@ let slidesView = (cards) => {
     slidesPerView: cards, // the number of cards viewed per slide
     spaceBetween: 30, // the space between cards
     autoplay: true, // auto play carousel
-    loop: true, // repeat carousel when end
     pagination: {
       el: ".swiper-pagination",
       clickable: true, // to allow click on indicators
